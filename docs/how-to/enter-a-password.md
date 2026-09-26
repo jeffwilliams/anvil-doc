@@ -1,0 +1,1 @@
+Some programs when run through Anvil expect a password to be typed on the terminal. This can be done using the `awin` program; see the instructions in the [tutorial](../tutorials/interactive-commands.md) for details.

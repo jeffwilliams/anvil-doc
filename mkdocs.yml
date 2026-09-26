@@ -1,0 +1,92 @@
+site_name: Anvil
+site_url: http://anvil-editor.net/
+theme:
+  name: material
+  logo: img/logo.svg
+  favicon: img/favicon.png
+nav:
+  - 'Overview': index.md
+  - 'Download': download.md
+  - 'Tutorials':
+    - 'Overview': tutorials/index.md
+    - 'Editor Layout': tutorials/editor-layout.md
+    - 'Using the Mouse': tutorials/using-the-mouse.md
+    - 'Using the Keyboard': tutorials/using-the-keyboard.md
+    - 'Multiple Cursors and Selections': tutorials/multiple-cursors.md
+    - 'Command Execution': tutorials/command-execution.md
+    - 'Range Statements': tutorials/range-statements.md
+    - 'Editing Remote Files': tutorials/editing-remote-files.md
+    - 'Interactive Commands': tutorials/interactive-commands.md
+    - 'Column Relative Paths': tutorials/column-rel-paths.md
+    - 'Keymaps': tutorials/keymaps.md
+    - 'Layers': tutorials/layers.md
+  - 'How-To':
+    - 'Install Anvil': how-to/install.md
+    - 'Build Anvil': how-to/build.md
+    - 'Solve Common Issues': how-to/common-issues.md
+    #- 'Use a Special Remote Environment*': how-to/dev-env.md
+    - 'Jump to a Line Number': how-to/jump-to-specific-line.md
+    - 'Enter a Password to an OS Program': how-to/enter-a-password.md
+    - 'Ignore Case in Searches': how-to/case-insensitive-search.md
+    - 'Add Windows Explorer Menu Items': how-to/windows-explorer.md
+    - 'Change Themes': how-to/change-themes.md
+    - 'Use Ripgrep': how-to/use-ripgrep.md
+    - 'Set a Custom Tag for Various File Types': how-to/custom-tag-for-filetype.md
+    - 'Indent using Spaces': how-to/indent-with-spaces.md
+    - 'Run on Mac': how-to/run-on-mac.md
+    - 'Use Pageant with Anvil': how-to/use-pageant.md
+    - 'Quickly Add New Key Bindings': how-to/quickly-add-new-key-bindings.md
+    - 'Cross Compile for MacOS': how-to/cross-compile-on-macos.md
+  - 'Reference':
+    #- 'Overview': reference/index.md
+    - 'Supported Platforms and Limitations': reference/supported-platforms.md
+    - 'Configuration Files': reference/config.md
+    - 'Command Line Arguments': reference/command-line.md
+    - 'Mouse': reference/mouse.md
+    - 'Keyboard': reference/keyboard.md
+    - 'Commands': reference/commands.md
+    - 'Plumbing': reference/plumbing.md
+    - 'Range Statements': reference/range-statements.md
+    - 'Remote Editing': reference/remote-editing.md
+    - 'Syntax Highlighting': reference/syntax-highlighting.md
+    - 'ANSI colors': reference/ansi.md
+    - 'Environment Variables': reference/environment.md
+    - 'API': reference/api.md
+    - 'Crashes': reference/crash.md
+    - 'Extra Tools': reference/useful-tools.md
+    - 'Keymaps': reference/keymaps.md
+    - 'Layers': reference/layers.md
+  - 'Articles':
+#    - 'Overview': articles/index.md
+    - 'Differences from Acme': articles/differences-from-acme.md
+    - 'Why require ALT+right-click?': articles/why-alt-right-click.md
+    - 'Why a REST API?': articles/why-rest.md
+  - 'Themes': themes/index.md
+  - 'Community':
+    - 'Customizations': community/customizations.md
+    - 'Other Acme Editors': community/other-acme-editors.md
+  - 'Contact': contact.md
+  - 'Buy me a Coffee': contribute.md
+
+not_in_nav: |
+  downloads/README.libgit2.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true 
+  - attr_list
+  - md_in_html
+  - tables
+
+plugins:
+    - search
+    - mkdocs-video:
+        video_autoplay: false
+        is_video: true
+        video_muted: true
+        video_controls: true
+        css_style:
+            width: "100%"
