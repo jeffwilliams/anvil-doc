@@ -13,7 +13,7 @@ If you already have windows in the column before you set the relative path, they
 
 ## Demo Video
 
-This video demonstrates the use of column-relative paths. We start with a file open on a remote host with a very long path name. We cut the directory part of the file including the remote host information, and paste it into the initial part of the column tag followed by a space. Then we Get the window to note that Anvil does in fact load the window using the relative path. Next we open the directory '.' which is relative to the column's path, showing the contents of the directory and open a few more files. Finally we create a new column and drag a window to that column and back, showing the window's path changing to absolute and back to relative.
+This video demonstrates the use of column-relative paths. We start with a file open on a remote host with a very long path name. We cut the directory part of the file including the remote host information, and paste it into the initial part of the column tag followed by a space. Then we Get the window to note that Anvil does in fact load the window using the relative path. Next we open the directory `.` which is relative to the column's path, showing the contents of the directory and open a few more files. Finally we create a new column and drag a window to that column and back, showing the window's path changing to absolute and back to relative.
 
 ![type:video](../../img/anvil-tut-col-rel-paths.mp4)
 

@@ -32,11 +32,11 @@ Anvil has two separate shortcuts for executing text. The shortcut CTRL-T execute
 
 A common text-editing operation is to surround a portion of text with some character. For example, adding double-quotes at the beginning or ending of a string, adding opening and closing parenthesis around an expression, adding a blank line before and after some text to add vertical whitespace, and so on.
 
-Anvil has a shortcut that helps make this easier. The shortcut CTRL-D (for delimit) replaces each selection with a cursor at the beginning and end of each selection. Thus if you selected some text and hit CTRL-D, you could  then type a string that would be added to the beginning and end of the selection.
+Anvil has a shortcut that helps make this easier. The shortcut CTRL-D (for delimit) replaces each selection with a cursor at the beginning and end of each selection. Thus if you selected some text and hit CTRL-D, you could then type a string that would be added to the beginning and end of the selection.
 
 As a special case, if you created cursors this way and then typed an opening bracket then each second cursor is instead replaced with the matching closing bracket. Put another way, if you created an even number of cursors and then typed a bracket in the general sense (one of '(', '[', or '{') then matching bracket pairs are inserted instead. This is a convenient way of surrounding text with brackets. In case your intent was only to add opening brackets instead, then performing an Undo immediately after the bracket is typed acts specially to instead replace the matching brackets with the opening brackets instead.
 
-Since commands that contain spaces are common in Anvil usage, there is also a shortcut CTRL-L that performs the same action as the lozenge (◊) command; it delimits each selection with lozenge characters.
+Since commands that contain spaces are common in Anvil usage, there is also a shortcut CTRL-L that performs the same action as the lozenge (`◊`) command; it delimits each selection with lozenge characters.
 
 ![type:video](../../img/anvil-tut-using-the-keyboard-5-delimit.mp4)
 
@@ -56,7 +56,7 @@ The following video demonstrates word completion using words from the system dic
 
 ## Quick Marks
 
-Anvil uses the function keys to perform quick and simple bookmarking. Clicking with the left mouse button and pressing a function key (F1 through F12) while the left mouse button is held creates a bookmark: the current cursor position is remembered. Pressing a the same function key without the mouse moves the cursor back to the remembered cursor position.
+Anvil uses the function keys to perform quick and simple bookmarking. Clicking with the left mouse button and pressing a function key (F1 through F12) while the left mouse button is held creates a bookmark: the current cursor position is remembered. Pressing the same function key without the mouse moves the cursor back to the remembered cursor position.
 
 ![type:video](../../img/anvil-tut-using-the-keyboard-7-marks.mp4)
 

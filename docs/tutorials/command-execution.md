@@ -6,11 +6,11 @@ The previous tutorials already introduced command execution, but this section ex
 
 Anvil has quite a few built-in commands. Some of these are shown by default in the tags of the editor, columns, and windows, such as `Newcol`, `Help`, `New`, and so on. All of the built-in commands begin with a capital letter to help avoid name collisions with OS commands, which are usually lower-case. Some of the commands have a version with a "\*" suffix, such as `Cmds` and `Cmds*`. The * version of these commands is more verbose.
 
-To list all of the built-in commands, execute the `Help` command, which is usually present in the editor tag. Help lists all the commands, a brief synopsis, and each command has a lozenge-enclosed string that can be executed to show the detailed help. Alternately, you can consult the [command reference](../reference/commands.md)  for explanations.
+To list all of the built-in commands, execute the `Help` command, which is usually present in the editor tag. Help lists all the commands, a brief synopsis, and each command has a lozenge-enclosed string that can be executed to show the detailed help. Alternately, you can consult the [command reference](../reference/commands.md) for explanations.
 
 In this section we'll go over a few of the commands that are either useful enough to warrant highlighting, or need extra explanation than is provided in the Anvil help. 
 
-### Recent, Wins and Cmds
+### Recent, Wins, and Cmds
 
 These three commands are helpful for organization when you have a lot of windows open.
 
@@ -32,7 +32,7 @@ The `Title` command changes the name of the window as displayed in the window ti
 
 ![type:video](../../img/anvil-tut-cmds-title.mp4)
 
-### Do, Acq and On
+### Do, Acq, and On
 
 `Do` runs its arguments as a command, but in the directory of the current window. It's useful to run a command shown in one window in the directory or on the host of another window by using the [middle-left click execution](../tutorials/using-the-mouse.md#middle-click) technique.
 
@@ -89,26 +89,26 @@ Let's work on a grocery list.
 === "Linux"
 
     1. Open Anvil and in a new window paste the following:
-    
-            Grocery List
-            --------
+    ```
+    Grocery List
+    --------
 
-            Bananas
-            Apples
-            Carrots
-            Cheese
-            Bread
-            Milk
-            Eggs
-            Brocolli
-            Spinach
-            Bok Choi
-            Chick Peas
+    Bananas
+    Apples
+    Carrots
+    Cheese
+    Bread
+    Milk
+    Eggs
+    Brocolli
+    Spinach
+    Bok Choi
+    Chick Peas
+    ```
     
+    2. Add a date to the list. Create a new empty line under Grocery List and type `<date` into the window tag. Middle click on `<date` to insert the current date.
     
-    2. Add a date to the list. Create a new empty line under Grocery List and type `<date`. Middle click on `<date` to replace it with the current date.
-    
-    3. Sort the list. In the tag type `|sort`. Select the lines containing the food (Bananas through Chick Peas) and then middle-click `|sort` to sort it alphabetically.
+    3. Sort the list. In the windows tag type `|sort`. Select the lines containing the food (Bananas through Chick Peas) and then middle-click `|sort` to sort it alphabetically.
     
     4. Count how many things are in the list. In the tag type `>wc -l`, surround it with Lozenges, ensure the lines containing the food are selected, and then execute `>wc -l`.
     
@@ -132,7 +132,7 @@ Let's work on a grocery list.
             Chick Peas
     
     
-    2. Add a date to the list. Create a new empty line under Grocery List and type `<date`. Middle click on `<date` to replace it with the current date.
+    2. Add a date to the list. Create a new empty line under Grocery List and type `<date` into the window tag. Middle click on `<date` to insert the current date.
     
     3. Sort the list. In the tag type `|sort`. Select the lines containing the food (Bananas through Chick Peas) and then middle-click `|sort` to sort it alphabetically.
     
@@ -154,12 +154,15 @@ The `Cmds` command lists which commands have been recently executed, and the cur
 
 When OS commands are executed in a remote window (a window with a file open from a remote SSH server) then the command is executed on the remote server. However, there are times you would like to run a command on the local machine, despite the window being remote. You can do this by prefixing the command with `+`. For example, to execute the `ls` command locally when you middle click it somewhere in a remote window's tag or body, you can use the command: 
 
-    +ls
+```
++ls
+```
 
 If you want to execute the command and also use one of the `|`, `<` or `>` prefixes, put the `+` _after_ the redirect. For example:
 
-    >+wc
-
+```
+>+wc
+```
 
 
 

@@ -6,8 +6,9 @@ The Anvil source is also available from [Github](https://github.com/jeffwilliams
 
 Anvil is licensed under the MIT license, the full text of which is shown in the License section.
 
-**Note**: Currently the MacOS binaries are signed, but not with an official code-signing certificate. When run, you may observe dialog boxes that complain that Anvil cannot be checked for malicious software. You can prevent this by running the command
-`xattr -d com.apple.quarantine anvil`, where `anvil` is replaced with the path to anvil.
+!!! note
+
+	Currently the MacOS binaries are signed, but not with an official code-signing certificate. When run, you may observe dialog boxes that complain that Anvil cannot be checked for malicious software. You can prevent this by running the command `xattr -d com.apple.quarantine /path/to/anvil`.
 
 ## Latest Version
 
@@ -92,11 +93,11 @@ See the [Release Notes](release-notes/release-notes-v0.7.1.md) for changes in th
 
 ## License
 
-The Anvil source code is licenced under the MIT license.
+The Anvil source code is licensed under the MIT license.
 
 > The MIT License (MIT)
 > 
-> Copyright (c) 2019-2025 Jeff Williams
+> Copyright (c) 2019-2026 Jeff Williams
 > 
 > Permission is hereby granted, free of charge, to any person obtaining a copy
 > of this software and associated documentation files (the "Software"), to deal

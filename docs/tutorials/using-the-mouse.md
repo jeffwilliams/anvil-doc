@@ -12,11 +12,11 @@ Left clicking and dragging, then pressing the middle button while the left butto
 
 ### Left Click: Pasting
 
-Left clicking, then pressing the right button while the left button is still pressed, pastes the text from the clipboard. Alternately, left clicking then pressing the shift key while the left button is still pressed will also paste.
+Left clicking, then pressing the right button while the left button is still pressed, pastes the text from the clipboard. Alternately, left clicking then pressing the shift key while the left button is still pressed will also paste from the clipboard.
 
 ### Left Clicking Multiple Times
 
-Left-clicking multiple times in the same place iteratively selects more text under the cursor. Left-clicking twice (double-clicking) on a word selects that word; specifically, it selects the series of characters that consist of letters, numbers and underscores under the cursor. Triple-clicking selects the space-separated string under the cursor. Quad-clicking selects the entire line.
+Left-clicking multiple times in the same place iteratively selects more text under the cursor. Left-clicking twice (double-clicking) on a word selects that word; specifically, it selects the series of characters that consist of letters, numbers, and underscores under the cursor. Triple-clicking selects the space-separated string under the cursor. Quad-clicking selects the entire line.
 
 For example, if the body contained a line consisting of the text `void some_function() {`, then double-clicking somewhere in `some` would select `some_function`, triple-clicking would select `some_function()`, and quad-clicking would select `void some_function() {`. 
 
@@ -24,9 +24,11 @@ Quad-clicking is a lot of clicks to select a line, so as an alternative double-c
 
 Double-clicking on a type of bracket (One of `(`, `[`, `{`, or their closing bracket) will select all the text within the bracket and its matching partner. Triple-clicking on a bracket will select the text including the brackets.
 
-Finally, double-clicking on a type of quote (One of `"`, `'`, or '◊`) will select all the text within the quotes, while triple-clicking will select the text and quotes. If there are multiple possible matching quotes in the same line then Anvil won't select anything. For example, in the line:
+Finally, double-clicking on a type of quote (One of `"`, `'`, or `◊`) will select all the text within the quotes, while triple-clicking will select the text and quotes. If there are multiple possible matching quotes in the same line then Anvil won't select anything. For example, in the line:
 
-	"Wage was in her early, with two joeboys," Ratz said, shoving a draft across the bar with his good hand. "Maybe some business with you, Case?"
+```
+"Wage was in her early, with two joeboys," Ratz said, shoving a draft across the bar with his good hand. "Maybe some business with you, Case?"
+```
 	
 if you were to double-click on the second `"` there are two possible matches for the closing quote (the first and third) so Anvil won't select anything.
 
@@ -55,14 +57,14 @@ Raw, unadorned, inscrutable hexadecimal numbers.
 Directly.
 ```
 
-2. Left click and drag to select the word `FORTRAN.` in the third line.
+2. Left click and drag to select the word `FORTRAN.` in the fifth line.
 
 3. Cut it. While still holding the left mouse button, click the middle mouse button to cut the text. 
 Alternately, while still holding the left mouse button press and release the control key.
 
 4. Select and cut the line `Machine Code.` by left-clicking the first character in the line, releasing the mouse button, left-clicking again and while holding the button, press and release the middle button. Alternately press and release the control key instead of the middle button.
 
-5. Paste it. In the third line where we cut the text `FORTRAN`, paste the text `Machine Code.` by pressing the left-mouse button, and while holding it press and release the right mouse button. Alternately use the shift key rather than the right mouse button. The line should now read `Real Programmers write in Machine Code.`
+5. Paste it. In the fifth line where we cut the text `FORTRAN`, paste the text `Machine Code.` by pressing the left-mouse button, and while holding it press and release the right mouse button. Alternately use the shift key rather than the right mouse button. The line should now read `Real Programmers write in Machine Code.`
 
 6. Triple-click the space-separated word `*macho*` to select it, and then type 'isoteric' to replace it.
 
@@ -82,7 +84,7 @@ Middle clicking is used to execute text. Middle clicking on a string of non-spac
 
     If you're using MacOS and you only have a two-button mouse, don't worry. You can simulate a middle click by pressing the Left mouse button and while it's pressed hitting the Command key.
 
-If you will execute a command with arguments often, you can surround it with lozenge characters (◊) so that you don't have to select it everytime you want to execute it. Middle-clicking text surrounded by lozenges executes the text, which may include spaces. Since it's hard to type lozenges, you can use the built-in ◊ command or type CTRL-L to insert a lozenge. If there are selections, executing ◊ or CTRL-L will insert a lozenge at the beginning and end of each selection.
+If you will execute a command with arguments often, you can surround it with lozenge characters (`◊`) so that you don't have to select it everytime you want to execute it. Middle-clicking text surrounded by lozenges executes the text, which may include spaces. Since it's hard to type lozenges, you can use the built-in ◊ command or type CTRL-L to insert a lozenge. If there are selections, executing ◊ or CTRL-L will insert a lozenge at the beginning and end of each selection.
 
 Commands are executed in the directory of the file being edited in the window, or in the current directory when executed from the editor or column tags.
 
@@ -150,21 +152,23 @@ There is a way to search and select all instances of a term which we'll learn ab
 
 1. Start anvil. In the left column create a new empty window by middle-clicking on the `New` command in the column tag. Paste the following text into the window body, an excerpt from a classic answer posted to stack-overflow:
 
-        You can't parse HTML with regex. Because HTML can't be parsed by regex. 
-        Regex is not a tool that can be used to correctly parse HTML. As I have 
-        answered in HTML-and-regex questions here so many times before, the use 
-        of regex will not allow you to consume HTML. Regular expressions are a tool 
-        that is insufficiently sophisticated to understand the constructs employed by 
-        HTML. HTML is not a regular language and hence cannot be parsed by regular 
-        expressions. Regex queries are not equipped to break down HTML into its 
-        meaningful parts. so many times but it is not getting to me. Even enhanced 
-        irregular regular expressions as used by Perl are not up to the task of parsing 
-        HTML. You will never make me crack. HTML is a language of sufficient complexity 
-        that it cannot be parsed by regular expressions. Even Jon Skeet cannot parse 
-        HTML using regular expressions. Every time you attempt to parse HTML with 
-        regular expressions, the unholy child weeps the blood of virgins, and Russian 
-        hackers pwn your webapp. Parsing HTML with regex summons tainted souls into 
-        the realm of the living. 
+```
+You can't parse HTML with regex. Because HTML can't be parsed by regex. 
+Regex is not a tool that can be used to correctly parse HTML. As I have 
+answered in HTML-and-regex questions here so many times before, the use 
+of regex will not allow you to consume HTML. Regular expressions are a tool 
+that is insufficiently sophisticated to understand the constructs employed by 
+HTML. HTML is not a regular language and hence cannot be parsed by regular 
+expressions. Regex queries are not equipped to break down HTML into its 
+meaningful parts. so many times but it is not getting to me. Even enhanced 
+irregular regular expressions as used by Perl are not up to the task of parsing 
+HTML. You will never make me crack. HTML is a language of sufficient complexity 
+that it cannot be parsed by regular expressions. Even Jon Skeet cannot parse 
+HTML using regular expressions. Every time you attempt to parse HTML with 
+regular expressions, the unholy child weeps the blood of virgins, and Russian 
+hackers pwn your webapp. Parsing HTML with regex summons tainted souls into 
+the realm of the living.
+```
         
 2. Search for HTML. In the body of the new window, right click on HTML to highlight the next instance of HTML. Right click it again to find and highlight the next instance of HTML in the body. Right click it to highlight the second instance. Continue right clicking until the search wraps.
 
@@ -194,7 +198,7 @@ We're going to practice browsing through some source code files.
     
     3. Start Anvil in the untarred directory. In the right pane you'll see the path `.` (the current directory) open, listing the source code files for typoh.
     
-    4. Open `replacer.go`. Hold the Alt key and right click on `replacer.go` in the window for `.`. This will open it in new window.
+    4. Open `replacer.go`. Hold the Alt key and right click on `replacer.go` in the window for `.`. This will open it in a new window.
     
     5. Find the Replace function. In the window tag type 'Replace(', highlight it, and right click it to find the Replace function.
     
@@ -210,7 +214,7 @@ We're going to practice browsing through some source code files.
     
     3. Start Anvil in the untarred directory. In the right pane you'll see the path `.` (the current directory) open, listing the source code files for typoh.
     
-    4. Open `replacer.go`. Hold the Alt key and right click on `replacer.go` in the window for `.`. This will open it in new window.
+    4. Open `replacer.go`. Hold the Alt key and right click on `replacer.go` in the window for `.`. This will open it in a new window.
     
     5. Find the Replace function. In the window tag type 'Replace(', highlight it, and right click it to find the Replace function.
     
