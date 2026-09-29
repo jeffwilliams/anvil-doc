@@ -11,12 +11,12 @@ Syntactically, A range statement consists of a `!` character, followed by a sequ
 
 !!! note
 
-    This section is going to include a lot of regular expressions. You might want to review the basics a little before proceeding, or at 
+    This section is going to include a lot of regular expressions. You might want to review the basics before proceeding, or at 
     least prepare yourself for many [leaning toothpicks](https://en.wikipedia.org/wiki/Leaning_toothpick_syndrome).
 
 ## Simple Expressions
 
-To make this more concrete, let's work through some examples. First, download the README.md file for the Blender toolkit from [here](../../downloads/README.blender.md.txt) and open it in Anvil, or paste it into a blank window. We'll use it as some sample text for our statements. 
+To make this more concrete, let's work through some examples. First, download the [README.md](../../downloads/README.blender.md.txt) for the Blender toolkit and open it in Anvil, or paste it into a blank window. We'll use it as some sample text for our statements. 
 
 In the tag, type the simple statement `!7` and execute it by middle-clicking. Before middle-clicking make sure there is nothing selected in the window body. The basic expression `7` simply selects the seventh line in the file, so the line `Blender` is selected.
 
@@ -34,19 +34,19 @@ These simple expressions above—line numbers, rune numbers, and regular express
 
 Now instead try `!5+/--+/`. This statement is composed of the simple statements `5` and `/--+/` combined with the `+` operator. The `+` operator will select the second expression `/--+/` executed starting from the end of the first expression (line 5). When executed with nothing selected it will select the underline under the `Project Pages` section heading. Note that it didn't instead select either of the `--` sequences that are in the HTML comment at the top of the file since we forced the regex search to start after line 5.
 
-Let's use the same statement, but change the operator to `;` instead so that it is `!5;/--+/`. The `;` operator selects from the beginning of the first operand to the end of the second. Execute it with nothing selected and it will select all the text from the beginning of line 5 to the underlining under `Project Pages`. The distinction between the operators `,` and `;` is subtle; the second operand to ',' is evaluated starting from the beginning of the input range, whereas the second operand in ';' is evaluated starting from the end of the first operand.
+Let's use the same statement, but change the operator to `;` instead so that it is `!5;/--+/`. The `;` operator selects from the beginning of the first operand to the end of the second. Execute it with nothing selected and it will select all the text from the beginning of line 5 to the underlining under `Project Pages`. The distinction between the operators `,` and `;` is subtle; the second operand to `,` is evaluated starting from the beginning of the input range, whereas the second operand in `;` is evaluated starting from the end of the first operand.
 
 ![type:video](../../img/anvil-tut-range-expressions-2.mp4)
 
 ## Starting with Multiple Selections
 
-So far we've only worked with one range at a time by creating a single selection and executing one statement. But each of these expressions operates on a set of input ranges, so let's see what happens when we use multiple selections. Select each of the following lines in the readme file separately, making three separate selections:
+So far we've only worked with one range at a time by creating a single selection and executing one statement. Each of these expressions operates on a set of input ranges, so let's see what happens when we use multiple selections. Select each of the following lines in the readme file separately, making three separate selections:
 
     - [Main Website](http://www.blender.org)
     - [Reference Manual](https://docs.blender.org/manual/en/latest/index.html)
     - [User Community](https://www.blender.org/community/)
 
-Let's select the names of the links in these selections: "Main Website", "Reference Manual", and "User Community". First, execute the range statement `!/\[.*\]/`. Here the regular expression will match the '[' character, a series of any character, then the ']' character. In each selection this will select the name portion of the links, including the square brackets. This is close, but not quite what we want.
+Let's select the names of the links in these selections: "Main Website", "Reference Manual", and "User Community". First, execute the range statement `!/\[.*\]/`. Here the regular expression will match the `[` character, a series of any character, then the `]` character. In each selection this will select the name portion of the links, including the square brackets. This is close, but not quite what we want.
 
 Modify our range statement by appending another expression that will select from the second character to the last character in each range: `#2,$-#1`. The whole statement is thus `!/\[.*\]/#2,$-#1`. Clear the selections by clicking somewhere, select the three lines again, and then execute the new statement. It will select only the names of the links.
 
@@ -60,13 +60,15 @@ Note that we could have run the two expressions separately and achieved the same
 
 So far, each the expressions we've seen simply refine the range that was input to it. That is, for each range they receive as input then produce exactly one range as output. However, to do useful work we often want to divide a range into subranges. 
 
-This can be done with an x expression. Given a range as input, the x finds all matches of a regular expression in that range and outputs a new range for each match. The syntax of the x expression is `x/RE/`, where RE is a regular expression.
+This can be done with an x expression. Given a range as input, the `x` finds all matches of a regular expression in that range and outputs a new range for each match. The syntax of the `x` expression is `x/RE/`, where RE is a regular expression.
 
-For example, let's find the link names like we did in the previous section using the x operator. Select the following lines in the README file as one entire selection instead of three separate selections:
+For example, let's find the link names like we did in the previous section using the x expression. Select the following lines in the README file as one entire selection instead of three separate selections:
 
-    - [Main Website](http://www.blender.org)
-    - [Reference Manual](https://docs.blender.org/manual/en/latest/index.html)
-    - [User Community](https://www.blender.org/community/)
+```
+- [Main Website](http://www.blender.org)
+- [Reference Manual](https://docs.blender.org/manual/en/latest/index.html)
+- [User Community](https://www.blender.org/community/)
+```
 
 Now execute the statement `!x/\[.*\]/x/[^\[\]]*/`. The first expression `x/\[.*\]/` in this statement finds all the link names with enclosing brackets which will produce three new ranges. The second expression `x/[^\[\]]*/` operates on each of these new ranges to strip out the brackets by only accepting non-bracket characters.
 
@@ -93,7 +95,7 @@ The inverse of `g` is `v`, which selects all ranges that do _not_ match its regu
     A note on syntax: it's perfectly cromulent to add spaces between the expressions in a statement to make it a bit more 
     readable. For example, you can write the above like so: `!x/\[[^]]*\]\([^)]*\)/  v/wiki/  x/\([^)]*\)/  #2,$-#1` if desired. 
     Just remember that a single middle-click will only execute the space-separated word under the cursor, so to execute that entire 
-    expression you would need to select it all and middle-click, or surround it with lozenges ('◊').
+    expression you would need to select it all and middle-click, or surround it with lozenges (`◊`).
 
 ![type:video](../../img/anvil-tut-range-expressions-5.mp4)
 
@@ -110,11 +112,11 @@ For example, if we wanted to make all instances of the word "Blender" bold by su
 Finally, we can use the `p` command to print the ranges to the +Errors window. The `p` command accepts an argument in forward slashes that will be printed between each match as a delimiter. When the ranges to be printed are not complete lines, the following p operation comes in handy to print the ranges with a newline separating them:
 
 ```
-    p/
-    /
+p/
+/
 ```
     
-That is, use a literal newline as the argument to the `p` operator. 
+That is, use a literal newline as the argument to the `p` operator. Using a `\n` provides the same result, as in `p/\n/`.
 
 ![type:video](../../img/anvil-tut-range-expressions-6.mp4)
 

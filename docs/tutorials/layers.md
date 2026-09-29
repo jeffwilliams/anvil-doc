@@ -1,6 +1,6 @@
 # Layers
 
-All of the visible columns and windows in Anvil are actually part of an entity called a _layer_. In all of the tutorials so far we've been working in a single layer. In this tutorial we'll learn how to make and delete other layers, and how to switch to them to make them the active layer.
+All of the visible columns and windows in Anvil are part of an entity called a _layer_. In all of the tutorials so far we've been working in a single layer. In this tutorial we'll learn how to make and delete other layers, and how to switch to them to make them the active layer.
 
 ## Create a New Layer
 
@@ -41,5 +41,5 @@ To delete a layer you can execute the command `Dellyr`. It will delete the curre
 
 ## Layer Keyboard Mode
 
-Rather than using the commands described above you can also create, delete and move between layers using the keyboard by invoking a special mode. When you type CTRL+Y Anvil will change to layer mode (it will push a new keymap onto the keymap stack). Pressing Up will move up one layer, while Down will move down one layer. Pressing the key N will create a new layer, and D will delete the current layer. Finally, pressing Escape will exit the layer mode and switch back to the base keyboard mode (it will pop the keymap stack).
+Rather than using the commands described above you can also create, delete, and move between layers using the keyboard by invoking a special mode. When you type CTRL+Y Anvil will change to layer mode (it will push a new keymap onto the keymap stack). Pressing Up will move up one layer, while Down will move down one layer. Pressing the key N will create a new layer, and D will delete the current layer. Finally, pressing Escape will exit the layer mode and switch back to the base keyboard mode (it will pop the keymap stack).
 

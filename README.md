@@ -4,29 +4,39 @@ The HTML documentation is built using [MkDocs](https://www.mkdocs.org/getting-st
 
 First source your python virtual environment if needed:
 
-  source python-venv/bin/activate
+```sh
+source python-venv/bin/activate
+```
 
 To preview the documentation, in the root directory run:
 
-  mkdocs serve
+```sh
+mkdocs serve
+```
 
 To build the site for upload use 
 
-  mkdocs build
+```sh
+mkdocs build
+```
 
 # Installing mkdocs
 
 Install mkdocs and the theme using:
 
-    pip3 install mkdocs-material
-    pip3 install mkdocs-video
+```sh
+pip3 install mkdocs-material
+pip3 install mkdocs-video
+````
 
-In newer versions of Linux you will probably need to use a virtual environment for python. To set up mkdocs using a venv, instead from this docs directory do:
+In newer versions of Linux you will probably need to use a virtual environment for Python. To set up mkdocs using a venv, instead from this docs directory do:
 
-    python3 -m venv python-venv
-    source python-venv/bin/activate
-    pip3 install mkdocs-material
-    pip3 install mkdocs-video
+```sh
+python3 -m venv python-venv
+source python-venv/bin/activate
+pip3 install mkdocs-material
+pip3 install mkdocs-video
+```
 
 # Modifying
 

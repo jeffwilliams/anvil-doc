@@ -2,7 +2,7 @@
 
 ## Windows and Columns
 
-Anvil consists of tiled windows. Windows are layed out in columns. Windows, columns and the editor itself each have a separated line of text at the top called the tag, which contains commands and—in the case of windows—the filename being edited in the window.
+Anvil consists of tiled windows. Windows are layed out in columns. Windows, columns, and the editor itself each have a separated line of text at the top called the tag, which contains commands and—in the case of windows—the filename being edited in the window.
 
 <figure markdown>
   ![Anvil Components](../../img/anvil-simple-window-markedup.png)
@@ -41,7 +41,7 @@ Sometimes you just need to see a little more text in a window. You can do this b
 
 1. Start anvil. In the left column create a new empty window by middle-click on the `New` command in the column tag. Do that two more times so that there are three windows in the left column.
 
-2. Nudge the middle window by left clicking it's layout box.
+2. Nudge the middle window by left clicking its layout box.
 
 3. Without moving the mouse, click a few more times.
 
@@ -52,7 +52,7 @@ Sometimes you just need to see a little more text in a window. You can do this b
 
 ## Tags 
 
-The editor, columns, and windows each have a block at the top called the tag. Tags are editable: you can type in them to delete commands or add new commands, search terms or labels.
+The editor, columns, and windows each have a block at the top called the tag. Tags are editable: you can type in them to delete commands or add new commands, search terms, or labels.
 
 In order from left to right, the window tag consists of the filename, a read-only section ending with a pipe (|), then user area. The filename and user area are both editable.
 
@@ -116,7 +116,7 @@ Scrollbars in Anvil work slightly differently from other applications. Clicking 
 
 Clicking the left button scrolls up. The number of lines the body is scrolled is relative to the offset where the click occurs within the scrollbar. Clicking near the top of the scrollbar scrolls less, and clicking near the bottom scrolls more. If you were to left-click at the top of the scrollbar it would scroll up one line, whereas a left-click at the bottom of the scrollbar scrolls up one page. Clicking in the middle scrolls half a page. 
 
-Right clicking behaves the same, except causes the body to scroll down.
+Right clicking behaves the same, except doing so causes the body to scroll down.
 
 
 ### Try it: Scrollbars
