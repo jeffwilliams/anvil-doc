@@ -25,7 +25,7 @@ Usage: Alias [name] [command...]
 	
 Alias creates command aliases. If no arguments are specified it lists the current aliases. If one argument is specified, then that alias is removed. If two arguments are specified, then the first is the name of the alias, and the rest is the aliased command.
 
-An alias may contain placeholders of the form $1 to $9 which are replaced with the corresponding arguments to the alias when it is executed. The placeholder $* is replaced with all the arguments separated by a space
+An alias may contain placeholders of the form $1 to $9 which are replaced with the corresponding arguments to the alias when it is executed. The placeholder $* is replaced with all the arguments separated by a space. The placeholder $$ is replaced with a literal $.
 	
 
 ## Ansi
