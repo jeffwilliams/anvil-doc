@@ -16,6 +16,12 @@ This page contains a short list of other text editors inspired by Acme.
 
   * [Yacco](https://github.com/aarzilli/yacco) is an editor inspired by Acme written in Go. A nice idea in Yacco is that CTRL-LeftMouse executes text. It uses the Go Shiny GUI library.
 
+  * [Z](https://github.com/sandgorgon/z) is an Acme inspired editor written in Scala which runs on the Java Virtual Machine.
+
+  * [Poe](https://github.com/prodhe/poe) is an Acme inspired terminal-based text editor written in Go. It uses tcell for rendering.
+
+  * [ma](https://github.com/kdltr/ma) is a single-window GUI editor written in Tcl/Tk.
+
   * [Z](https://github.com/sandgorgon/z) is an Acme inspured editor written in Scala which runs on the Java Virtual Machine.
 
   * [Poe](https://github.com/prodhe/poe) is an Acme inspired terminal-based text editor written in Go. It uses tcell for rendering.
