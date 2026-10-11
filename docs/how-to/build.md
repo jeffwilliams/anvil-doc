@@ -22,10 +22,10 @@ Using `./build -h` provides help about the available options. The final binaries
 
 If you are building on Windows or don't want to use build-all.sh for some reason, you can instead cd to specific subdirectories and build the binary using `go build`. You can do that in the following directories:
 
-  * anvil/src/anvil: To build Anvil
-  * anvil-extras/cmd/mdtoc: To build mdtoc
-  * anvil-extras/cmd/autodump: To build aad
-  * anvil-extras/cmd/Rt: To build the Rt 
-  * anvil-extras/cmd/awin: To build awin
-  * anvil-extras/cmd/wrap: To build wrap
+- anvil/src/anvil: To build Anvil
+- anvil-extras/cmd/mdtoc: To build mdtoc
+- anvil-extras/cmd/autodump: To build aad
+- anvil-extras/cmd/Rt: To build the Rt 
+- anvil-extras/cmd/awin: To build awin
+- anvil-extras/cmd/wrap: To build wrap
 

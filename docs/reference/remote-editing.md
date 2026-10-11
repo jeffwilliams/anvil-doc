@@ -48,10 +48,10 @@ Where terms enclosed in [] are optional, and terms enclosed in <> are mandatory.
 
 The terms are defined as:
 
-  * 'user@': The username used to authenticate with a host or proxy host, followed by the '@' character
-  * 'host:': The hostname or IP address where the path resides, followed by a ':' character
-  * 'port:': The TCP port of the SSH server to connect to
-  * '%proxy_host:': proxy_host is the hostname or IP address of an intermediate SSH server through which the connection to 'host' is proxied, preceeded by a '%' character to disambiguate, and followed by a ':' character. This is achieved using SSH tunneling, so this must be allowed in the proxy server's SSH daemon configuration.
+- 'user@': The username used to authenticate with a host or proxy host, followed by the '@' character
+- 'host:': The hostname or IP address where the path resides, followed by a ':' character
+- 'port:': The TCP port of the SSH server to connect to
+- '%proxy_host:': proxy_host is the hostname or IP address of an intermediate SSH server through which the connection to 'host' is proxied, preceeded by a '%' character to disambiguate, and followed by a ':' character. This is achieved using SSH tunneling, so this must be allowed in the proxy server's SSH daemon configuration.
 
 With a remote path, if <path> is a relative path (it does not begin with a /) then it is relative to the user's home directory.
 

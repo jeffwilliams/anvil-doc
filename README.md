@@ -1,6 +1,6 @@
 # Quick Start
 
-The HTML documentation is built using [MkDocs](https://www.mkdocs.org/getting-started/) with the [Material](https://squidfunk.github.io/mkdocs-material/) theme. The mkdocs-material theme requires python3.
+The HTML documentation is built using [MkDocs](https://www.mkdocs.org/getting-started/) with the [Material](https://squidfunk.github.io/mkdocs-material/) theme. The mkdocs-material theme requires Python 3.
 
 First source your python virtual environment if needed:
 
@@ -55,7 +55,7 @@ Screenshots of Anvil that were marked up with text were created using Inkscape a
 
 Some useful tips:
 
-* To link to a tutorial from the release notes, an example: [tutorial](../tutorials/column-rel-paths.md)
-* To link to a heading in a reference: [Wrap](../reference/commands.md#wrap) Note that the heading is lowercase!
-  * Dots in headings are elided in the anchor. style.js becomes stylejs: [style.js](../reference/config.md#stylejs)
-  * Spaces are converted to hyphens: [Dbg Flame](../reference/commands.md#dbg-flame)
+- To link to a tutorial from the release notes, an example: [tutorial](../tutorials/column-rel-paths.md)
+- To link to a heading in a reference: [Wrap](../reference/commands.md#wrap) Note that the heading is lowercase!
+  - Dots in headings are elided in the anchor. style.js becomes stylejs: [style.js](../reference/config.md#stylejs)
+  - Spaces are converted to hyphens: [Dbg Flame](../reference/commands.md#dbg-flame)

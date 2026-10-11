@@ -18,9 +18,9 @@ The directive lines are:
 
 This line declares the beginning of a keymap definition. The lines which follow it all belong to the keymap until the next keymap line or the end of file. Each keymap must have a name, and optionally has one or more space-separated flags. The allowed flags are: 
 
-  * `replace`, which indicates that when the keymap file is loaded if there is already a keymap with this name loaded it is replaced by this keymap. This is the default.
-  * `update`, which indicates that when the keymap file is loaded if there is already a keymap with this name then the mappings from this keymap are added to the existing keymap.
-  * `fallthrough` which indicates that when this keymap is active at the top of the stack, if a special or modified key is pressed and no mapping is found in this keymap, the next lower keymap can be searched. It in turn may have the `fallthrough` flag set as well. Note that the fallthrough flag has no effect for normal text keys (like letters, numbers and punctuation); they are always typed and no special mapping is required.
+- `replace`, which indicates that when the keymap file is loaded if there is already a keymap with this name loaded it is replaced by this keymap. This is the default.
+- `update`, which indicates that when the keymap file is loaded if there is already a keymap with this name then the mappings from this keymap are added to the existing keymap.
+- `fallthrough` which indicates that when this keymap is active at the top of the stack, if a special or modified key is pressed and no mapping is found in this keymap, the next lower keymap can be searched. It in turn may have the `fallthrough` flag set as well. Note that the fallthrough flag has no effect for normal text keys (like letters, numbers and punctuation); they are always typed and no special mapping is required.
 
 For example, this line declares the start of a keymap named "emacs" that when loaded should update any existing keymap already named emacs:
 

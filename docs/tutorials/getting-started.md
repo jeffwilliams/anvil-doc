@@ -4,11 +4,11 @@ This tutorial will walk you through the basic steps of installing Anvil and edit
 
 By the end of the tutorial you will know:
 
-* how to launch Anvil
-* how to navigate between different columns and windows
-* how the mouse is used in Anvil
-* how to use multiple selections
-* how to launch external commands
+- how to launch Anvil
+- how to navigate between different columns and windows
+- how the mouse is used in Anvil
+- how to use multiple selections
+- how to launch external commands
 
 This tutorial assumes you have access to the bash shell under Linux, and the command prompt in Windows.
 
@@ -38,14 +38,14 @@ Navigate to the [Releases](dead link) page. Download the latest executable by cl
 
     Assuming the anvil executable has been downloaded to `C:\Downloads` perform the following steps:
 
-    * Using Windows Explorer, make the directory `C:\Program Files\Anvil`. 
-    * Copy the Anvil executable from `C:\Downloads` to `C:\Program Files\Anvil`
-    * Add the directory `C:\Program Files\Anvil` to the Windows path:
-      * Launch the Control Panel.
-      * Choose System→About→Advanced System Settings
-      * Select ‘Environment Variables’
-      * Edit the environment variable ‘Path’ and add the directory `C:\Program Files\Anvil`
-    * You will need to restart any Power Shell or Command prompt instances to have the environment variable take effect
+- Using Windows Explorer, make the directory `C:\Program Files\Anvil`. 
+- Copy the Anvil executable from `C:\Downloads` to `C:\Program Files\Anvil`
+- Add the directory `C:\Program Files\Anvil` to the Windows path:
+    - Launch the Control Panel.
+    - Choose System→About→Advanced System Settings
+    - Select ‘Environment Variables’
+    - Edit the environment variable ‘Path’ and add the directory `C:\Program Files\Anvil`
+- You will need to restart any Power Shell or Command prompt instances to have the environment variable take effect
 
 ## Launch Anvil
 

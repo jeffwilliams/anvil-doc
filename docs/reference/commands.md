@@ -4,12 +4,12 @@
 
 Print information about the editor, including where some files are expected to be located such as:
 
-  *  The configuration directory
-  *  The settings file, and if it was loaded on startup
-  *  The style configuration file, and if it was loaded on startup
-  *  The SSH key directory, and a list of cached SSH connections
-  *  The plumbing configuration file
-  *  The API listener port, and a list of active API sessions
+- The configuration directory
+- The settings file, and if it was loaded on startup
+- The style configuration file, and if it was loaded on startup
+- The SSH key directory, and a list of cached SSH connections
+- The plumbing configuration file
+- The API listener port, and a list of active API sessions
 
 
 ## Acq

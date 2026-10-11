@@ -59,8 +59,8 @@ Sea Sky theme for Anvil. This was created for Anvil by The Dæmon, based on the 
 
 This theme is meant to be used with these fonts:
 
-  * Pragmata Pro, which can be purchased from [Fabrizio Schiavi's website](https://fsd.it/shop/fonts/pragmatapro/)
-  * Source Code Pro, downloadable from [Google Fonts](https://fonts.google.com/specimen/Source+Code+Pro)
+- Pragmata Pro, which can be purchased from [Fabrizio Schiavi's website](https://fsd.it/shop/fonts/pragmatapro/)
+- Source Code Pro, downloadable from [Google Fonts](https://fonts.google.com/specimen/Source+Code+Pro)
 
 Alternately, you can instead download the version that uses the default fonts.
 
