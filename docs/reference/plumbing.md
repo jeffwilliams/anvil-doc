@@ -33,10 +33,10 @@ Here is an example of a simple plumbing file:
 
 This example contains four rules:
 
-  * the first rule matches URLs, and when matched opens that URL in Firefox
-  * the second matches JPEG files and opens Eye of Gnome to view the image
-  * the third matches PDF files and launches Evince to view them
-  * The fourth matches an Anvil dump file, and loads it in Anvil
+- the first rule matches URLs, and when matched opens that URL in Firefox
+- the second matches JPEG files and opens Eye of Gnome to view the image
+- the third matches PDF files and launches Evince to view them
+- The fourth matches an Anvil dump file, and loads it in Anvil
 
 ## Sample Plumbing Rules
 

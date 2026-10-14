@@ -10,12 +10,12 @@ Anvil can edit remote files on Linux. It may be possible to edit remote files on
 
 Anvil has a number of limitations:
 
-  * Anvil only supports UTF-8 encoded text, and so by extension ASCII text.
-  * Anvil only supports TTF fonts
-  * Anvil expects Unix line endings: lines must end with a newline only. Text that contains carriage returns followed by newlines is stripped of carriage-returns when pasted into Anvil.
-  * Editing remote files requires the remote host to be running SSH, and the following commands to be available:
-    * `sh`
-    * `cat`
-    * An `ls` command that supports the `-A` (do not list implied . and ..) and `-p` (append '/' indicator to directories) options.
-    * A `find` command that supports the `-maxdepth` option
-    * `sort`
+- Anvil only supports UTF-8 encoded text, and so by extension ASCII text.
+- Anvil only supports TTF fonts
+- Anvil expects Unix line endings: lines must end with a newline only. Text that contains carriage returns followed by newlines is stripped of carriage-returns when pasted into Anvil.
+- Editing remote files requires the remote host to be running SSH, and the following commands to be available:
+    - `sh`
+    - `cat`
+    - An `ls` command that supports the `-A` (do not list implied . and ..) and `-p` (append '/' indicator to directories) options.
+    - A `find` command that supports the `-maxdepth` option
+    - `sort`

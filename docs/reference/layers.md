@@ -4,27 +4,27 @@ Layers are a group of columns and windows that are shown at the same time. Layer
 
 The following commands are used to modify and change between layers:
 
-  * [Newlyr](commands.md#newlyr): Create a new layer and switch to it
-  * [Dellyr](commands.md#dellyr): Delete the current layer
-  * [Up](commands.md#up): Make the layer above this one active
-  * [Down](commands.md#down): Make the layer below this one active
-  * [Setlyr](commands.md#setlyr): Set which layer index is active
-  * [Colup](commands.md#colup): Move the current column to the layer above
-  * [Colup^](commands.md#colup_1): Move the current column to the layer above, and switch to that layer
-  * [Coldown](commands.md#down): Move the current column to the layer below
-  * [Coldown^](commands.md#down_1): Move the current column to the layer below, and switch to that layer
-  * [Cols](commands.md#cols): List all the columns and layers
-  * [Lyrname](commands.md#lyrname): Set the name of the layer
+- [Newlyr](commands.md#newlyr): Create a new layer and switch to it
+- [Dellyr](commands.md#dellyr): Delete the current layer
+- [Up](commands.md#up): Make the layer above this one active
+- [Down](commands.md#down): Make the layer below this one active
+- [Setlyr](commands.md#setlyr): Set which layer index is active
+- [Colup](commands.md#colup): Move the current column to the layer above
+- [Colup^](commands.md#colup_1): Move the current column to the layer above, and switch to that layer
+- [Coldown](commands.md#down): Move the current column to the layer below
+- [Coldown^](commands.md#down_1): Move the current column to the layer below, and switch to that layer
+- [Cols](commands.md#cols): List all the columns and layers
+- [Lyrname](commands.md#lyrname): Set the name of the layer
 
 Additionally there is a keyboard mode for layer movement and manipulation. To enter the mode use CTRL-Y from the base mode. The mapped keys are:
 
-  * Up: Make the layer above the current layer active
-  * Down: Make the layer below the current layer active  
-  * Pg Up: Move to the highest layer
-  * Pg Down: Move to the lowest layer
-  * N: Create a new layer and switch to it
-  * D: Delete the current layer
-  * Escape: exit the keyboard mode (pop the current keymap)
+- Up: Make the layer above the current layer active
+- Down: Make the layer below the current layer active  
+- Pg Up: Move to the highest layer
+- Pg Down: Move to the lowest layer
+- N: Create a new layer and switch to it
+- D: Delete the current layer
+- Escape: exit the keyboard mode (pop the current keymap)
 
 You can also change which layer is active using CTRL+Scrollwheel.
 
