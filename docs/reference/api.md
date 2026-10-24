@@ -4,7 +4,7 @@ Anvil provides an API that is meant to be used by programs launched from within 
 
 ## Connecting
 
-To use the API, programs must read the ANVIL_API_PORT environment variable and open a TCP connection to the API to the local host on that port.
+To use the API, programs must read the ANVIL_API_PORT environment variable and open a TCP connection to localhost on that port.
 
 Once connected the program can perform HTTP requests.
 
@@ -22,12 +22,12 @@ Anvil allows clients to create a websocket connection. Once created, Anvil will 
 
 ## Operations
 
-The following operations are supported by the API. In the table the number 1 is a placeholder used to represent a window id, and may be replaced with any window id value.
+The following operations are supported by the API. In the table the number 1 is a placeholder used to represent a window ID, and may be replaced with any window ID value.
 
 | Method | URL | Behaviour | Structure |
-| ----- | --- |--------- | ------ |
-| GET | /wins/ | List window ids and paths | array of structures with fields Id, GlobalPath, Path |
-| POST | /wins/ | Create a new window and return the id | structure with field Id |
+| --- | --- | --- | --- |
+| GET | /wins | List window IDs and paths | array of structures with fields Id, GlobalPath, Path |
+| POST | /wins | Create a new window and return the ID | structure with field Id |
 | GET | /wins/1/body | Get contents of body of window 1 | unstructured plain text |
 | PUT | /wins/1/body | Set contents of body of window 1 | unstructured plain text |
 | POST | /wins/1/body | Append to the contents of the body of window 1 | unstructured plain text |
@@ -54,7 +54,7 @@ To use it, execute it from the tag or body of a window containing C source code.
 
 The program demonstrates that extending Anvil through its API can be done as simply as writing a shell script.
 
-```
+```bash
 #!/usr/bin/env bash
 
 #
@@ -83,8 +83,5 @@ fi
 curl -s -H "Anvil-Sess: $ANVIL_API_SESS" http://localhost:$ANVIL_API_PORT/wins/$ANVIL_WIN_ID/body | \
   clang-format -style="{BasedOnStyle: $BASE_STYLE, IndentWidth: 4, ColumnLimit: 0}" $clang_parts | \
   curl -X PUT -s -H "Anvil-Sess: $ANVIL_API_SESS" --data-binary @- http://localhost:$ANVIL_API_PORT/wins/$ANVIL_WIN_ID/body
-
-
-
 ```
 

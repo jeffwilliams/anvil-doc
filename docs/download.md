@@ -1,10 +1,8 @@
-Anvil can be downloaded from the sections below, and is available for download as compiled binaries, or as source code. 
-The "Latest Version" section contains the latest production-ready version and has been well tested. The "Pre-Release Version" 
-section allows you to download versions of Anvil with experimental changes and may contain more bugs than the production version. 
+Anvil can be downloaded from the sections below, and is available for download as compiled binaries, or as source code. The "Latest Version" section contains the latest production-ready version and has been well tested. The "Pre-Release Version" section allows you to download versions of Anvil with experimental changes and may contain more bugs than the production version.
 
 The Anvil source is also available from [Github](https://github.com/jeffwilliams/anvil).
 
-Anvil is licensed under the MIT license, the full text of which is shown in the License section.
+Anvil is licensed under the MIT license, the full text of which is shown in the License section below.
 
 !!! note
 
@@ -34,7 +32,7 @@ Version 0.7.1, released Aug 27, 2026
 See the [Release Notes](release-notes/release-notes-v0.7.1.md) for changes in this version.
 
 | Filename | OS | Arch | Type |
-| ------- | -- |------- | --- | 
+| ------- | -- |------- | --- |
 | [anvil-v0.7.1-windows-amd64.zip](/releases/anvil-v0.7.1-windows-amd64.zip) | Windows | x86 64-bit | Binary archive |
 | [anvil-v0.7.1-linux-amd64.tar.gz](/releases/anvil-v0.7.1-linux-amd64.tar.gz) | Linux | x86 64-bit | Binary archive |
 | [anvil-v0.7.1-darwin-arm64.tar.gz](/releases/anvil-v0.7.1-darwin-arm64.tar.gz) | MacOS | ARM64 | Binary archive |
@@ -46,7 +44,7 @@ See the [Release Notes](release-notes/release-notes-v0.7.1.md) for changes in th
 
 ## Older Versions
 
-| Version | Filename | OS | Arch | Type | 
+| Version | Filename | OS | Arch | Type |
 | --------| ------- | -- |------- | --- |
 | **0.6** | [release notes](release-notes/release-notes-v0.6.md) | -  | - | - | - |
 | Mar 20, 2025 | [anvil-v0.6-windows-amd64.zip](/releases/anvil-v0.6-windows-amd64.zip) | Windows | x86 64-bit | Binary archive |
@@ -96,19 +94,19 @@ See the [Release Notes](release-notes/release-notes-v0.7.1.md) for changes in th
 The Anvil source code is licensed under the MIT license.
 
 > The MIT License (MIT)
-> 
+>
 > Copyright (c) 2019-2026 Jeff Williams
-> 
+>
 > Permission is hereby granted, free of charge, to any person obtaining a copy
 > of this software and associated documentation files (the "Software"), to deal
 > in the Software without restriction, including without limitation the rights
 > to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 > copies of the Software, and to permit persons to whom the Software is
 > furnished to do so, subject to the following conditions:
-> 
+>
 > The above copyright notice and this permission notice shall be included in
 > all copies or substantial portions of the Software.
-> 
+>
 > THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 > IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 > FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE

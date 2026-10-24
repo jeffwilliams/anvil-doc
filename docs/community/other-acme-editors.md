@@ -2,7 +2,7 @@ This page contains a short list of other text editors inspired by Acme.
 
 - [Peak](https://github.com/Aleksanaa/peak) is an Acme-inspired TUI Text Editor written by Aleksanna, who also packaged [Anvil for nix](https://repology.org/project/anvil-editor/information).
 
-- [acme2k](https://github.com/karahobny/acme2k) is a customized version of the Acme source code that allows simpler user customization through a config.h header, adds up and down arrow key support, and standard keybindings. It runs on Plan 9, or on Unices using [plan9port](https://github.com/9fans/plan9port).
+- [acme2k](https://github.com/karahobny/acme2k) is a customized version of the Acme source code that allows simpler user customization through a config.h header, adds ++arrow-up++ and ++arrow-down++ navigation support, and standard keybindings. It runs on Plan 9, or on Unices using [plan9port](https://github.com/9fans/plan9port).
 
 - [Acme Standalone Complex](https://github.com/caerwynj/acme-sac) packages the Acme source code along with Inferno to allow running Acme on Windows, Linux and MacOS.
 
@@ -14,7 +14,7 @@ This page contains a short list of other text editors inspired by Acme.
 
 - [A](https://github.com/as/a) is an editor inspired by Acme and Sam written in Go. 
 
-- [Yacco](https://github.com/aarzilli/yacco) is an editor inspired by Acme written in Go. A nice idea in Yacco is that CTRL-LeftMouse executes text. It uses the Go Shiny GUI library.
+- [Yacco](https://github.com/aarzilli/yacco) is an editor inspired by Acme written in Go. A nice idea in Yacco is that ++control+left-button++ executes text. It uses the Go Shiny GUI library.
 
 - [Z](https://github.com/sandgorgon/z) is an Acme inspired editor written in Scala which runs on the Java Virtual Machine.
 

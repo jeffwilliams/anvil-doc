@@ -24,7 +24,6 @@ nav:
     - 'Install Anvil': how-to/install.md
     - 'Build Anvil': how-to/build.md
     - 'Solve Common Issues': how-to/common-issues.md
-    #- 'Use a Special Remote Environment*': how-to/dev-env.md
     - 'Jump to a Line Number': how-to/jump-to-specific-line.md
     - 'Enter a Password to an OS Program': how-to/enter-a-password.md
     - 'Ignore Case in Searches': how-to/case-insensitive-search.md
@@ -57,9 +56,8 @@ nav:
     - 'Keymaps': reference/keymaps.md
     - 'Layers': reference/layers.md
   - 'Articles':
-#    - 'Overview': articles/index.md
     - 'Differences from Acme': articles/differences-from-acme.md
-    - 'Why require ALT+right-click?': articles/why-alt-right-click.md
+    - 'Why require ALT + Mouse Right Button?': articles/why-alt-right-click.md
     - 'Why a REST API?': articles/why-rest.md
   - 'Themes': themes/index.md
   - 'Community':
@@ -74,6 +72,12 @@ not_in_nav: |
 markdown_extensions:
   - admonition
   - pymdownx.details
+  - pymdownx.keys:
+      key_map:
+        left-button: Mouse Left Button
+        middle-button: Mouse Middle Button
+        right-button: Mouse Right Button
+        scroll-wheel: Mouse Scroll Wheel
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true 

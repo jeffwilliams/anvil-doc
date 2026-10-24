@@ -11,8 +11,7 @@ Syntactically, A range statement consists of a `!` character, followed by a sequ
 
 !!! note
 
-    This section is going to include a lot of regular expressions. You might want to review the basics before proceeding, or at 
-    least prepare yourself for many [leaning toothpicks](https://en.wikipedia.org/wiki/Leaning_toothpick_syndrome).
+    This section is going to include a lot of regular expressions. You might want to review the basics before proceeding, or at least prepare yourself for many [leaning toothpicks](https://en.wikipedia.org/wiki/Leaning_toothpick_syndrome).
 
 ## Simple Expressions
 
