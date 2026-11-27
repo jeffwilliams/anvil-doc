@@ -6,7 +6,7 @@ This page contains a short list of other text editors inspired by Acme.
 
 - [Acme Standalone Complex](https://github.com/caerwynj/acme-sac) packages the Acme source code along with Inferno to allow running Acme on Windows, Linux and MacOS.
 
-- [Wily](http://www.cs.yorku.ca/~oz/wily/) is probably one of the earliest editors that emulated Acme. The code can be found on [github](http://www.cs.yorku.ca/~oz/wily/).
+- [Wily](http://www.cs.yorku.ca/~oz/wily/) is probably one of the earliest editors that emulated Acme. The code can be found on [github](https://github.com/9wm/wily).
 
 - [Edwood](https://github.com/rjkroege/edwood) is a Go port of Acme.
 
