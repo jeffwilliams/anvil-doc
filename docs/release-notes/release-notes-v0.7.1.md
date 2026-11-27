@@ -30,7 +30,7 @@ This version modifies the contents of dumpfiles in a way that is not backwards c
     
     The scope of trays can be changed by adding a prefix to the tray name. Use 'g' to make a tray global-scoped, i.e. §g:commands. Use 's' to make a tray session-scoped, i.e. §s:stuff. Use 'f' to make it file-scoped.
 
-    The Dump command causes the trays to be saved. File scope trays are saved to a subdirectory .anvil in the directory of the file where the tray was created. This allows you to store tray contents along with the files that contain references to them. Session scope trays are saved to the dumpfile. Global scope trays are saved to the directory 'trays' under the Anvil [configuration directory](config.md).
+    The Dump command causes the trays to be saved. File scope trays are saved to a subdirectory .anvil in the directory of the file where the tray was created. This allows you to store tray contents along with the files that contain references to them. Session scope trays are saved to the dumpfile. Global scope trays are saved to the directory 'trays' under the Anvil [configuration directory](../reference/config.md).
 
     A handy keybinding to use with trays is the following:
     
